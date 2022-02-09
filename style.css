@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    overflow: hidden;
+}
+
+/* v případě nahrání fotek */
+/* .img1 {
+    background-image: url(img/obr1.jpg);
+}
+
+.img2 {
+    background-image: url(img/obr2.jpg);
+}
+
+.img3 {
+    background-image: url(img/obr3.jpg);
+}
+
+.img4 {
+    background-image: url(img/obr4.jpg);
+}
+
+.img5 {
+    background-image: url(img/obr5.jpg);
+} */
+
+
+.container {
+
+    display: flex;
+    width: 90vw;
+
+}
+
+.slider{
+
+    border: 1px black solid;
+    height: 80vh;
+    /* width: 10px; */
+
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+
+    flex: 0.1;
+    position: relative;
+
+    transition: flex 0.5s ease-in-out;
+}
+
+.slider h2 {
+
+    position: absolute;
+    font-size: 24px;
+
+    bottom: 20px;
+    left: 20px;
+
+    opacity: 0;
+
+}
+
+.slider.active {
+    flex:4;
+}
+
+.slider.active h2 {
+    opacity: 2;
+}
+
+
+@media(max-width: 600px){
+    .cotainer {
+        width: 100vw;
+    }
+/* ˇvýběr jednotlivých elementů které chceme pro m.web schovat */
+   .slide:nth-of-type(4), .slide:nth-of-type(5){
+       display: none;
+   }     
+}
+
+
+
+
+
+
+
